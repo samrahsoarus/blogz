@@ -1,0 +1,33 @@
+{ box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; font-family: "Trebuchet MS", Helvetica, sans-serif; background: #e1dbf5; }
+body { margin: 0; font-size: 1.2em; font-weight: thin; color:#AC8BC1; }
+header, main, aside, footer { padding: 2em; }
+header { background: #e1e6f9; text-align: center; text-transform: uppercase; }
+header a { color: #B09CE2; font-size: 0.85em; text-decoration: none; }
+header a:hover { color:#9A89C4; }
+
+main { background: #f7e1f5; }
+aside { background: #e1dbf5; }
+footer { color: white; text-align: center; }
+article { background: #FFF9FD; padding: 25px; padding-left: 50px; margin-bottom: 20px; width: 75%; margin-left: 5%; }
+h1 { text-align: center; font-size: 3em; margin-top: 25px; margin-bottom: 25px; color: #FFF;}
+h2 a { color: #B09CE2; text-decoration: none; font-size: 1em; text-transform: uppercase; }
+h2 a:hover { color:#9A89C4; }
+input { border: none; margin-left: 5%; width:750px; height: 20px; }
+textarea { border: none; margin-left: 5%; width:750px; height: 150px; }
+.button { background-color: #E1DBF5; border: none; margin-left: none; width: 100px; margin-left: 70%; height: 40px; margin-top: 20px; font-family: "Trebuchet MS", Helvetica, sans-serif; }
+.button:hover { background-color: #CEC3F4; }
+table { border-spacing: 0px; margin-left: 15%; }
+.error { color: red; text-align:center; margin-bottom:20px; }
+
+/* h1 { font-size: 3em; color: #FFF; }
+td { padding: 10px 30px 10px 30px; background-colo r: #6BBAA7; border: #6BBAA7; }
+table { border-spacing: 0px; }
+.error { color: pink; font-size: .8em; margin: 0px; background-color: #6C648B !important; }
+.submit { border: 0px; background-color: #FBA100; color: #FFF; padding: 10px; border-radius: 15px; float: right; width: 70%; 
+            font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 0.8em; }
+.top { padding-top: 20px; background-color: #6BBAA7; border: #6BBAA7; }
+.top-error { padding-top: 30px; color: pink; font-size: .8em; margin: 0px; background-color: #6C648B !important; }
+.bottom { padding-bottom: 30px; background-color: #6BBAA7; border: #6BBAA7; }
+input { border: none; padding: 5px; height: 100%; font-size: 0.9em; }
+.welcome { font-size: 5em; color: #FFF} */
