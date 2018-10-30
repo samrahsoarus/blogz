@@ -2,23 +2,27 @@
 
 {% block content %}
 
-    <form method='post'>
+<div class="error">{{error}}</div>
 
-        <div class="error">{{error}}</div>
-        
+<p class="page-text">Feeling inspired? Bless us with some words :)</p>
+
+<div class="new-body"> 
+    <form method='post'>
         <table>
             <tr>
-
-                <td>  Blog Post Title:  </td>
-                <td>  <input type="text" name='title' />   </td>
+                <td>  <label class="login-label" for="email">  Blog Post Title  </label>  </td>
+                <td>  <input class="login-input" type="text" name='title' /></td>
             </tr>
             <tr>
-                <td>  New Blog Entry:  </td>
-                <td>  <textarea name='body'></textarea>  </td>
+                <td>  <label class="login-label" for="email">  New Blog Content  </label>  </td>
+                <td>  <textarea class="new-textarea" name='body'></textarea></td>
+            </tr>
+            <tr>
+                <td>  </td>
+                <td>  <input class="login-button" type="submit" value='Add Entry' />  </td>
             </tr>
         </table>
-        <input class="button" type="submit" value='Add Entry' />  </td>
-        
     </form>
-    
+</div>
+
 {% endblock %}

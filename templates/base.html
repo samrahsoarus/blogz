@@ -1,22 +1,41 @@
 <!doctype html>
 <html>
+
     <head>
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
         <title>{{page_title}}</title>
     </head>
-<body>
-    
-    <header>
-        <a href="/blog">Main Blog Page</a>
-        <a style="margin-left:20px;" href="/new">Add New Blog Entry</a>
-    </header>
-    
-    <h1>{{page_title}}</h1>
-        
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
 
-</body>
+
+    <body>
+        
+        <header>
+            <a href="/home">  Home  </a>
+            <a style="margin-left:35px;" href="/blog">  Blog  </a>
+            <a style="margin-left:35px;" href="/new">  Add New  </a>
+            <a style="margin-left:35px;" href="/login">  Log in  </a> / <a href="/logout">  Log out  </a>
+            <a style="margin-left:35px;" href="/signup">  Sign up  </a>
+        </header>
+        
+        <h1>{{page_title}}</h1>
+
+        <main>
+
+            {% with messages = get_flashed_messages(with_categories=True) %}
+                <ul>
+                    {% for category,message in messages %}
+                        <li class="{{category}}">{{message}}</li>
+                    {% endfor %}
+                </ul>
+            {% endwith %}
+
+            {% block content %}
+            {% endblock %}
+
+        </main>
+
+    </body>
+    
+    <footer>  <a href='/logout'>log out</a>  </footer>
+
 </html>

@@ -1,33 +1,38 @@
-{ box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; font-family: "Trebuchet MS", Helvetica, sans-serif; background: #e1dbf5; }
+html { -webkit-text-size-adjust: 100%; font-family: "Trebuchet MS", Helvetica, sans-serif; background: #CEC3F4; }
 body { margin: 0; font-size: 1.2em; font-weight: thin; color:#AC8BC1; }
 header, main, aside, footer { padding: 2em; }
-header { background: #e1e6f9; text-align: center; text-transform: uppercase; }
+header { background: #D2DAF7; text-align: center; text-transform: uppercase; }
 header a { color: #B09CE2; font-size: 0.85em; text-decoration: none; }
 header a:hover { color:#9A89C4; }
-
-main { background: #f7e1f5; }
-aside { background: #e1dbf5; }
+main { background: #F4CDF1; padding: 1em; padding-bottom: 4em; }
+aside { background: #CEC3F4; }
 footer { color: white; text-align: center; }
 article { background: #FFF9FD; padding: 25px; padding-left: 50px; margin-bottom: 20px; width: 75%; margin-left: 5%; }
-h1 { text-align: center; font-size: 3em; margin-top: 25px; margin-bottom: 25px; color: #FFF;}
+h1 { text-align: center; font-size: 3em; margin-top: 25px; margin-bottom: 25px; color: #FFF; }
 h2 a { color: #B09CE2; text-decoration: none; font-size: 1em; text-transform: uppercase; }
 h2 a:hover { color:#9A89C4; }
-input { border: none; margin-left: 5%; width:750px; height: 20px; }
-textarea { border: none; margin-left: 5%; width:750px; height: 150px; }
-.button { background-color: #E1DBF5; border: none; margin-left: none; width: 100px; margin-left: 70%; height: 40px; margin-top: 20px; font-family: "Trebuchet MS", Helvetica, sans-serif; }
-.button:hover { background-color: #CEC3F4; }
+h2.author a { color: #B09CE2; text-transform: none; }
+input { border: none; }
+textarea { border: none; }
 table { border-spacing: 0px; margin-left: 15%; }
-.error { color: red; text-align:center; margin-bottom:20px; }
-
-/* h1 { font-size: 3em; color: #FFF; }
-td { padding: 10px 30px 10px 30px; background-colo r: #6BBAA7; border: #6BBAA7; }
-table { border-spacing: 0px; }
-.error { color: pink; font-size: .8em; margin: 0px; background-color: #6C648B !important; }
-.submit { border: 0px; background-color: #FBA100; color: #FFF; padding: 10px; border-radius: 15px; float: right; width: 70%; 
-            font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 0.8em; }
-.top { padding-top: 20px; background-color: #6BBAA7; border: #6BBAA7; }
-.top-error { padding-top: 30px; color: pink; font-size: .8em; margin: 0px; background-color: #6C648B !important; }
-.bottom { padding-bottom: 30px; background-color: #6BBAA7; border: #6BBAA7; }
-input { border: none; padding: 5px; height: 100%; font-size: 0.9em; }
-.welcome { font-size: 5em; color: #FFF} */
+td { padding-bottom: 30px; }
+.error { color: red; text-align:center; font-size: 0.8em; }
+li.error { color: red; list-style: none; }
+.page-text { text-align:center; }
+.login-button:hover { background-color: #B5A4F2; color:#FFF; }
+.login-body { margin-left: 19%; margin-top: 60px; }
+.signup-body { margin-left: 17%; margin-top: 60px; }
+.new-body { margin-left: 16%; margin-top: 60px; }
+.blog-body { margin-left: 7%; margin-top: 60px; }
+.post-body { margin-left: 20%; margin-top: 60px; margin-bottom: 60px;  width: 60%; line-height: 1.75; }
+footer { text-align: center; text-transform: uppercase; font-size: 0.8em; padding-top: 30px; }
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { background-color: #FFFCEF !important; }
+p.author-link { font-size: 0.7em; }
+p.author-link a { color: #9A89C4; text-decoration: none; }
+p.author-link a:hover { color:#B09CE2; }
+.login-input { border: none; padding-top: 15px; padding-bottom: 15px; width: 450px; margin-left:30px;  padding-left:10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; }
+.new-textarea { border: none; padding-top: 15px; padding-bottom: 15px; width: 450px; margin-left:30px;  padding-left:10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; height: 120px; }
+.login-button { background-color: #CEC3F4; border: none; padding: 15px; float: right; width: 100px; 
+     font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: .7em; text-transform: uppercase; }

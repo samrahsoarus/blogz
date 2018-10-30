@@ -2,13 +2,15 @@
 
 {% block content %}
 
-    <ul>
-        {% for blog in blogs %}
-            <article>
-                <h2><a href="/post?id={{blog.id}}">{{blog.title}}</a></h2>
-                <p>{{blog.body}}</p>
-            </article>
-        {% endfor %}
-    </ul>
+    <div class="home-body">
+        <ul>
+            {% for blog in blogs %}
+                <article>
+                    <h2><a href="/post?id={{blog.id}}">  {{blog.title}}  </a></h2>
+                    <p>{{blog.body}}</p>
+                </article>
+            {% endfor %}
+        </ul>
+    </div>
 
 {% endblock %}

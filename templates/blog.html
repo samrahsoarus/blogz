@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if author != '' %}
+        <p class="page-text">Blog Posts for {{author}}</p>
+    {% endif %}
+
+    <div class="blog-body">
+        <ul>
+            {% for blog in blogs %}
+                <article>
+                    <h2><a href="/post?blog_id={{blog.id}}">{{blog.title}}</a></h2>
+                    <p>{{blog.body}}</p>
+                        {% for user in users %}
+                            {% if blog.owner_id == user.id and author == '' %}
+                                <p class="author-link"> Written by: <a href="/post?user_id={{blog.owner_id}}">{{user.email}}</a></p>
+                            {% endif %}
+                        {% endfor %}
+                </article>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
